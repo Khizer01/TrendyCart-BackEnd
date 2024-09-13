@@ -25,7 +25,11 @@ const userSchema = new mongoose.Schema({
     },
     img: {
         type: String
-    }
+    },
+    wishList: {
+        type: Array,
+        default: []
+    },
 },
     { timestamps: true }
 );
